@@ -43,8 +43,8 @@ This project demonstrates a simple bookstore API, which includes functionalities
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/example/bookstore-api.git
-   cd bookstore-api
+   git clone https://github.com/jeffyzhu/bookstore-example.git
+   cd bookstore-example
    ```
 2. Build and run the application:
    ```sh
@@ -93,17 +93,17 @@ This project demonstrates a simple bookstore API, which includes functionalities
 
   Response:
   ```json
-  [
-    {
-      "id": 1,
-      "title": "Book Title",
-      "author": "Author Name",
-      "price": 29.99,
-      "category": "Category"
-    },
-    ...
-  ]
-  ```
+[
+  {
+    "id": 1,
+    "title": "Book Title",
+    "author": "Author Name",
+    "price": 29.99,
+    "category": "Category"
+  },
+  "..."
+]
+```
 
 ### Cart
 
@@ -127,17 +127,17 @@ This project demonstrates a simple bookstore API, which includes functionalities
 
   Response:
   ```json
-  [
-    {
-      "id": 1,
-      "title": "Book Title",
-      "author": "Author Name",
-      "price": 29.99,
-      "category": "Category"
-    },
-    ...
-  ]
-  ```
+[
+  {
+    "id": 1,
+    "title": "Book Title",
+    "author": "Author Name",
+    "price": 29.99,
+    "category": "Category"
+  },
+  "..."
+]
+```
 
 - **Checkout Cart and Get Total Price**
 
@@ -162,8 +162,6 @@ To run the tests, use the following command:
 To access the API documentation, navigate to the following URL after running the application:
 `http://localhost:8080/swagger-ui.html`
 
-## Authors
-- [Author Name](https://github.com/example)
 
 ## License
 [MIT](LICENSE)
