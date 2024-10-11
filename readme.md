@@ -4,13 +4,14 @@ A simple Spring Boot-based API for managing books and shopping carts in a bookst
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Framework Choice](#framework-choice)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
 - [API Endpoints](#api-endpoints)
-    - [Books](#books)
-    - [Cart](#cart)
+  - [Books](#books)
+  - [Cart](#cart)
 - [Running Tests](#running-tests)
 - [Documentation](#documentation)
 - [Authors](#authors)
@@ -22,6 +23,16 @@ This project demonstrates a simple bookstore API, which includes functionalities
 - Managing books
 - Managing shopping carts and their contents
 - Calculating total prices for carts
+
+## Framework Choice
+
+### Spring Boot
+
+- **Wide adoption and rich ecosystem:** Spring Boot is widely used in the industry, has extensive documentation, and numerous community resources.
+- **Rapid development:** Spring Boot simplifies setup, development, and deployment.
+- **Integrated testing support:** Spring Boot has comprehensive built-in testing capabilities using JUnit.
+- **In-memory database support:** Easy integration with H2 in-memory database.
+- **API documentation:** Integrates well with Swagger.
 
 ## Technologies Used
 
@@ -54,9 +65,9 @@ This project demonstrates a simple bookstore API, which includes functionalities
 3. Access the in-memory H2 database console:
    Open your browser and go to: `http://localhost:8080/h2-console`
    Use the following credentials:
-    - **JDBC URL:** `jdbc:h2:mem:testdb`
-    - **Username:** `sa`
-    - **Password:** `password`
+  - **JDBC URL:** `jdbc:h2:mem:testdb`
+  - **Username:** `sa`
+  - **Password:** `password`
 
 ## API Endpoints
 
@@ -94,14 +105,14 @@ This project demonstrates a simple bookstore API, which includes functionalities
   Response:
   ```json
 [
-  {
-    "id": 1,
-    "title": "Book Title",
-    "author": "Author Name",
-    "price": 29.99,
-    "category": "Category"
-  },
-  "..."
+{
+"id": 1,
+"title": "Book Title",
+"author": "Author Name",
+"price": 29.99,
+"category": "Category"
+},
+"..."
 ]
 ```
 
@@ -128,14 +139,14 @@ This project demonstrates a simple bookstore API, which includes functionalities
   Response:
   ```json
 [
-  {
-    "id": 1,
-    "title": "Book Title",
-    "author": "Author Name",
-    "price": 29.99,
-    "category": "Category"
-  },
-  "..."
+{
+"id": 1,
+"title": "Book Title",
+"author": "Author Name",
+"price": 29.99,
+"category": "Category"
+},
+"..."
 ]
 ```
 
@@ -161,7 +172,6 @@ To run the tests, use the following command:
 
 To access the API documentation, navigate to the following URL after running the application:
 `http://localhost:8080/swagger-ui.html`
-
 
 ## License
 [MIT](LICENSE)
