@@ -51,7 +51,7 @@ public class BookControllerTest {
         mockMvc.perform(post("/books")
                         .content(bookJson)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
+                .andExpect(status().isCreated())
                 .andExpect(content().json("{\"id\":1,\"title\":\"Test Book\",\"author\":\"Author\",\"price\":29.99,\"category\":\"Fiction\"}"));
     }
 
